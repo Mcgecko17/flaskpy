@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+INICIO
+{% endblock %}
+
+{% block content %}
+<div class="container-sm text-center index">
+<h1 class="display-3">Bienvenido a nuestra lista de items</h1>
+<p class="lead">aqui puedes llevar un registro de todas tus ventas.</p>
+<hr class="my-4" >
+<p>¿Tienes una cuenta?</p>
+<div class="d-flex justify-content-center">
+    <a href="{{url_for('auth_bp.login')}}" class="btn btn-primary mx-2">Iniciar Sesion</a>
+    <a href="{{url_for('auth_bp.register')}}" class="btn btn-secondary mx-2">Registrarse</a>
+
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,49 @@
+body {
+    background-image: url('/static/tool-2820946_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+nav-link {
+    color: white;
+    transition: all 0.3s ease; /* Añadir una transición suave */
+    padding: 5px 10px; /* Añadir relleno para los enlaces de navegación */
+    border-radius: 5px; /* Bordes curvos para los enlaces de navegación */
+}
+
+.nav-link:hover {
+    background-color: #007bff; /* Cambiar el color de fondo al pasar el mouse */
+    color: white; /* Cambiar el color del texto al pasar el mouse */
+    border-radius: 5px; /* Bordes curvos */
+    padding: 5px 10px; /* Ajustar el relleno para hacer un cuadrado más pequeño */
+}
+.index{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 60px;
+    border-radius: 10px;
+    margin-top: 100px;
+    
+}
+
+.formedit{
+   background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+    margin-top: 200px;
+}
+
+ 
+footer{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 250px;
+    color: white;
+}
+
+
+.relleno{
+    margin-top: 400px;
+    margin-bottom: 600px;
+}

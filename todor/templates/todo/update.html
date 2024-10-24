@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Actualizar Inventario
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4 formedit">
+    <h1>Actualizar Inventario</h1>
+    <form method="POST" action="{{ url_for('todo.update', id=todo.id) }}">
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" value="{{ todo.nombre }}" required>
+        </div>
+        <div class="mb-3">
+            <label for="codigo" class="form-label">Código</label>
+            <input type="text" class="form-control" id="codigo" name="codigo" value="{{ todo.codigo }}" required>
+        </div>
+        <div class="mb-3">
+            <label for="cantidad" class="form-label">Cantidad</label>
+            <input type="number" class="form-control" id="cantidad" name="cantidad" value="{{ todo.cantidad }}" required>
+        </div>
+        <div class="mb-3">
+            <label for="precio" class="form-label">Precio</label>
+            <input type="number" class="form-control" id="precio" name="precio" value="{{ todo.precio }}" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Actualizar</button>
+    </form>
+</div>
+{% endblock %}

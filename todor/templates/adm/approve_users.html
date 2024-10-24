@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+aea
+{% endblock %}
+
+{% block content %}
+<div class="container mt-10">
+    <h1>Usuarios por Aprobar</h1>
+    <form method="POST" action="{{ url_for('adm_bp.approve_users') }}">
+        <ul class="list-group ">
+            {% for user in users %}
+            <li class="list-group-item ">
+                {{ user.username }}
+                <button type="submit" name="user_id" value="{{ user.id }}" class="btn btn-success btn-sm float-end">Aprobar</button>
+            </li>
+            {% endfor %}
+        </ul>
+    </form>
+</div>
+<div class="relleno"></div>
+{% endblock %}

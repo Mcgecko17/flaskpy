@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Eliminar Inventario
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>¿Estás seguro de que deseas eliminar este artículo?</h2>
+    <form method="POST" action="{{ url_for('todo.delete', id=todo.id) }}">
+        <div class="mb-3">
+            <label for="codigo" class="form-label">Código</label>
+            <input type="text" class="form-control" id="codigo" name="codigo" value="{{ todo.codigo }}" readonly>
+        </div>
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" value="{{ todo.nombre }}" readonly>
+        </div>
+        <div class="mb-3">
+            <label for="cantidad" class="form-label">Cantidad</label>
+            <input type="number" class="form-control" id="cantidad" name="cantidad" value="{{ todo.cantidad }}" readonly>
+        </div>
+        <div class="mb-3">
+            <label for="precio" class="form-label">Precio</label>
+            <input type="number" class="form-control" id="precio" name="precio" value="{{ todo.precio }}" readonly>
+        </div>
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        <a href="{{ url_for('todo.index') }}" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+{% endblock %}</form>
