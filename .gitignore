@@ -1,10 +1,6 @@
-# Entornos virtuales
-venv/
-.venv/
-.env/
 
 # Archivos de configuración de entorno
-*.env
+*.venv
 
 # Archivos de caché de Python
 __pycache__/
